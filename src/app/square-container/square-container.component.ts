@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import Square from '../../models/Square';
 
 @Component({
@@ -8,13 +8,18 @@ import Square from '../../models/Square';
 })
 export class SquareContainerComponent implements OnInit {
   squares: Square[];
+  @Output() clicked = new EventEmitter<string>();
 
   constructor() {
-    this.squares = ['red', 'lightblue', 'green', 'yellow'].map(color => {
+    this.squares = ['red', 'lightBlue', 'green', 'yellow'].map(color => {
       return new Square(color + '-square', color);
     });
   }
 
+  // noinspection JSMethodCanBeStatic
+  handleSquareClick(squareName) {
+    this.clicked.emit(squareName);
+  }
 
   ngOnInit() {
   }

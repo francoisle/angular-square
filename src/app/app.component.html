@@ -4,15 +4,25 @@
 <div class="container app-container">
   <div class="row app-row">
     <div class="col-8 component-container">
-      <app-square-container></app-square-container>
+      <app-square-container
+        (clicked)="onSquareClick($event)"
+      >
+      </app-square-container>
     </div>
     <div class="col-4 component-container">
-      <app-square-history></app-square-history>
+      <app-square-history
+        [lastClicked]="lastClickedSquareName"
+      >
+      </app-square-history>
     </div>
   </div>
   <div class="row app-row">
     <div class="col-12 component-container">
-      <app-last-square></app-last-square>
+      <app-last-square
+        [selectedColor]="getCurrentColor()"
+      >
+
+      </app-last-square>
     </div>
   </div>
   <div class="row app-row">

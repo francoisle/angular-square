@@ -1,13 +1,14 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-square-history',
   templateUrl: './square-history.component.html',
   styleUrls: ['./square-history.component.css']
 })
-export class SquareHistoryComponent implements OnInit {
+export class SquareHistoryComponent implements OnInit, OnChanges {
   static readonly HISTORY_LENGTH = 5; // Maximum size of the history.
   history: string[]; // The history to display
+  @Input() lastClicked;
 
   constructor() {
     this.history = SquareHistoryComponent.getInitHistory();
@@ -38,4 +39,8 @@ export class SquareHistoryComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngOnChanges(simpleChange) {
+    const currentValue = simpleChange.lastClicked.currentValue;
+    this.pushEntry(currentValue);
+  }
 }
