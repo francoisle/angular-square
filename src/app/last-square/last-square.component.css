@@ -1,0 +1,11 @@
+.last-square-container {
+}
+
+.last-square {
+  min-width: 100px;
+  min-height: 50px;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 0 15px;
+}
