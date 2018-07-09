@@ -1,0 +1,17 @@
+h1 {
+  margin: 10px;
+  text-align: center;
+  color: blue;
+}
+
+.app-container {
+  margin-top: 50px;
+}
+
+.app-row {
+  margin: 50px;
+}
+
+.component-container {
+  padding: 20px
+}
