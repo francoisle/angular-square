@@ -1,0 +1,16 @@
+Ideas to go further in this project:
+
+- Improve history list:
+--> Add CSS to the history list as well.
+--> Click on an history item is possible to act like a click on the corresponding square.
+
+- Color square component: edit square.
+--> Input text that the user can enter and that will be displayed inside a square.
+--> Change the color of a square.
+
+- Add the possibility (a button ?) to reset the application:
+--> Clear history.
+--> Clear last click.
+--> Route to "/".
+
+- Add the possibility (a button ?) to change the order of the squares (random, rotation ?).
