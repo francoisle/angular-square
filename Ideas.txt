@@ -14,3 +14,5 @@ Ideas to go further in this project:
 --> Route to "/".
 
 - Add the possibility (a button ?) to change the order of the squares (random, rotation ?).
+
+- ?
