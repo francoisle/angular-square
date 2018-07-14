@@ -10,6 +10,7 @@ import { BlueSquareComponent } from './blue-square/blue-square.component';
 import { YellowSquareComponent } from './yellow-square/yellow-square.component';
 import { RedSquareComponent } from './red-square/red-square.component';
 import { SquareComponent } from './square/square.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SquareComponent } from './square/square.component';
     SquareComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,7 +12,7 @@ export class SquareContainerComponent implements OnInit {
 
   constructor() {
     this.squares = ['red', 'lightBlue', 'green', 'yellow'].map(color => {
-      return new Square(color + '-square', color);
+      return new Square(color + '-square', color, color + '-square');
     });
   }
 

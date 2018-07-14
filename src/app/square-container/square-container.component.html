@@ -4,13 +4,17 @@
     <div class="col-6 square-container">
       <div class="square"
            [style.background-color]="squares[0].color"
-           (click)="handleSquareClick(squares[0].name)">
+           (click)="handleSquareClick(squares[0].name)"
+           routerLink={{squares[0].url}}
+      >
       </div>
     </div>
     <div class="col-6 square-container">
       <div class="square"
            [style.background-color]="squares[1].color"
-           (click)="handleSquareClick(squares[1].name)">
+           (click)="handleSquareClick(squares[1].name)"
+           routerLink={{squares[1].url}}
+      >
       </div>
     </div>
   </div>
@@ -18,13 +22,17 @@
     <div class="col-6 square-container">
       <div class="square"
            [style.background-color]="squares[2].color"
-           (click)="handleSquareClick(squares[2].name)">
+           (click)="handleSquareClick(squares[2].name)"
+           routerLink={{squares[2].url}}
+      >
       </div>
     </div>
     <div class="col-6 square-container">
       <div class="square"
            [style.background-color]="squares[3].color"
-           (click)="handleSquareClick(squares[3].name)">
+           (click)="handleSquareClick(squares[3].name)"
+           routerLink={{squares[3].url}}
+      >
       </div>
     </div>
   </div>
