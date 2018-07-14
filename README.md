@@ -1,27 +1,15 @@
-# AngularSquares
+# Angular Squares
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Welcome to this little Angular project which focuses on applying basic Angular concepts in order to get familiar with them.
 
-## Development server
+In this little project we show 4 squares each of them with a particular color and make them clickable to perform some action when the user actually clicks on one of them:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Display the color of the last clicked square.
+- Display an history of the five last clicked squares.
+- Route (via Angular Router) to the description page of the clicked square. 
 
-## Code scaffolding
+This project has been built with the CLI which means every CLI commands works for this little project.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+In particular, you get get started with an npm install followed by an ng serve --open.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Enjoy !
